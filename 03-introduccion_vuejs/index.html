@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Vuejs Intro</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Batman Quotes <small>{{newQuote}}</small></h1>
+        <input 
+            type="text" 
+            v-model="newQuote"
+            v-on:keypress.enter="onAddQuote">
+        </input>
+        <hr>
+        <ul>
+            <li v-for="({quote , author} ,index) in quotes">
+                <span> {{index +1 }} {{quote}}</span>
+                <!-- <blockquote v-if="author"> - {{author}}</blockquote> -->
+                <blockquote v-show="author"> - {{author}}</blockquote>
+            </li>
+        </ul>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
