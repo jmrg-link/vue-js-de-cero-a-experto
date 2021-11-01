@@ -1,15 +1,15 @@
 <template>
   <div>
     <h1>IndecisionApp</h1>
-    <img src="https://via.placeholder.com/250" alt="bg" />
+    <img v-if="img"  :src="img" alt="bg" />
     <div class="bg-dark"></div>
     <div class="indecision-container">
-      <input type="text" placeholder="Realiza una pregunta..." />
-      <p>Recuerda terminar con un signo de interrogación <strong>?</strong></p>
-      <div>
-        <h2>
-          <p>¿Sere millonario?</p>
-        </h2>
+      <input v-model="question" type="text" placeholder="Realiza una pregunta..." />
+      <p>Recuerda terminar con un signo de interrogación <strong>(?)</strong></p>
+      <div v-if="isValidQuestion">
+        <h2>{{question}}</h2>
+        <h1>{{answer}}</h1>
+        <!-- <h1>{{answer === 'yes' ? 'Sii!' : 'Noo!'}}</h1> -->
       </div>
     </div>
   </div>
@@ -17,7 +17,31 @@
 <script>
 export default {
   name: "IndecisionApp",
-};
+  data() {
+      return {
+          question: null,
+          answer:null,
+          img:null,
+          isValidQuestion:false
+      }
+  },
+  methods: {
+      async getAnswer(){
+          this.answer = 'pensando...'
+          const {answer, image} = await fetch('https://yesno.wtf/api').then(response => response.json())
+          this.answer = answer === 'yes' ? 'Sii!' : 'Noo!'
+          this.img  = image
+      }
+  },
+  watch:{
+      question(value){
+          this.isValidQuestion = false
+          if(!value.includes('?')) return 
+          this.isValidQuestion = true
+          this.getAnswer()
+      }
+  }
+}
 </script>
 
 <style scoped>
@@ -54,7 +78,7 @@ input:focus {
 p {
   color: white;
   font-size: 20px;
-  margin-top: 0px;
+  margin-top: 5px;
 }
 
 h1,
