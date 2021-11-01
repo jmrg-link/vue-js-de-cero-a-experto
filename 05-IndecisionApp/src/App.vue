@@ -1,22 +1,18 @@
 <template>
   <div>
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <Counter />
-    
+    <indecision />
   </div>
 </template>
-
 <script>
-import Counter from "@/components/Counter";
+import Indecision from "@/components/Indecision";
 
 export default {
   name: "App",
   components: {
-    Counter
+    Indecision
   },
 };
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
