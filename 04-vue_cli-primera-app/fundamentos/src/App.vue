@@ -1,16 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Counter />
+  <div>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <Counter />
+  </div>
 </template>
 
 <script>
-import Counter from '@/components/Counter'
+import Counter from "@/components/Counter";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Counter
-  }
-}
+    Counter,
+  },
+};
 </script>
 
 <style>
