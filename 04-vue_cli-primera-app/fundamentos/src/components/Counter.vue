@@ -14,7 +14,11 @@ export default {
         title: String,
         start:{
             type:Number,
-            default:0
+            default:0,
+            // required:true
+            validator(value){
+                return value >= 0
+            }
         }
     } ,
 
