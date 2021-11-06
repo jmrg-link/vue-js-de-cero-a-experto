@@ -14,4 +14,11 @@ describe('Counter component', ()=>{
         const h2Value = wrapper.find('h2').text()
         expect(h2Value).toBe('Counter')
     })
+
+    test('el valor por defecto debe de ser 100 en el "p" ', () => {
+        const wrapper = shallowMount ( Counter )
+        //const pTags = wrapper.findAll('p')
+        const value = wrapper.find('[data-testid="counter"]').text()
+        expect(value).toBe("100")
+    })
 })
