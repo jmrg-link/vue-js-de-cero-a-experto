@@ -1,14 +1,20 @@
 <template>
   <div>
     <h1>IndecisionApp</h1>
-    <img v-if="img"  :src="img" alt="bg" />
+    <img v-if="img" :src="img" alt="bg" />
     <div class="bg-dark"></div>
     <div class="indecision-container">
-      <input v-model="question" type="text" placeholder="Realiza una pregunta..." />
-      <p>Recuerda terminar con un signo de interrogación <strong>(?)</strong></p>
+      <input
+        v-model="question"
+        type="text"
+        placeholder="Realiza una pregunta..."
+      />
+      <p>
+        Recuerda terminar con un signo de interrogación <strong>(?)</strong>
+      </p>
       <div v-if="isValidQuestion">
-        <h2>{{question}}</h2>
-        <h1>{{answer}}</h1>
+        <h2>{{ question }}</h2>
+        <h1>{{ answer }}</h1>
         <!-- <h1>{{answer === 'yes' ? 'Sii!' : 'Noo!'}}</h1> -->
       </div>
     </div>
@@ -18,30 +24,40 @@
 export default {
   name: "IndecisionApp",
   data() {
-      return {
-          question: null,
-          answer:null,
-          img:null,
-          isValidQuestion:false
-      }
+    return {
+      question: null,
+      answer: null,
+      img: null,
+      isValidQuestion: false,
+    };
   },
   methods: {
-      async getAnswer(){
-          this.answer = 'pensando...'
-          const {answer, image} = await fetch('https://yesno.wtf/api').then(response => response.json())
-          this.answer = answer === 'yes' ? 'Sii!' : 'Noo!'
-          this.img  = image
+    async getAnswer() {
+      try {
+        this.answer = "pensando...";
+        const { answer, image } = await fetch("https://yesno.wtf/api").then(
+          (response) => response.json()
+        );
+        this.answer = answer === "yes" ? "Sii!" : "Noo!";
+        this.img = image;
+      } catch (error) {
+        console.log("IndecisionCompoenent: ", error);
+        this.answer = "No se pudo mostrar la API";
+        this.img = null;
       }
+    },
   },
-  watch:{
-      question(value){
-          this.isValidQuestion = false
-          if(!value.includes('?')) return 
-          this.isValidQuestion = true
-          this.getAnswer()
-      }
-  }
-}
+  watch: {
+    question(value) {
+      this.isValidQuestion = false;
+      console.log({ value });
+      if (!value.includes("?")) return;
+      this.isValidQuestion = true;
+      console.log({ value });
+      this.getAnswer();
+    },
+  },
+};
 </script>
 
 <style scoped>
