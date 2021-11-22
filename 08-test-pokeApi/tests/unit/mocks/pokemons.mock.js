@@ -1,18 +1,18 @@
 export const pokemons = [
-    {
-        name:'bulbasaur', 
-        id:1
-    },
-    {
-        name:'ivysaur', 
-        id:2
-    },
-    {
-        name:'venusaur', 
-        id:3
-    },
-    {
-        name:'charmander', 
-        id:4
-    }
+  {
+    name: "Pikachu",
+    id: 5,
+  },
+  {
+    name: "charmander",
+    id: 10,
+  },
+  {
+    name: "venusaur",
+    id: 15,
+  },
+  {
+    name: "mew",
+    id: 20,
+  }
 ]
