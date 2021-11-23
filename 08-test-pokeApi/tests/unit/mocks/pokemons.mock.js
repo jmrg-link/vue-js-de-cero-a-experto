@@ -14,5 +14,5 @@ export const pokemons = [
   {
     name: "mew",
     id: 20,
-  }
-]
+  },
+];

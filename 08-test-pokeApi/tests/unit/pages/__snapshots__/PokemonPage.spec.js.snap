@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonPage component debe de hacer match con el snapshot 1`] = `<h1>Espere por favor...</h1>`;
+
+exports[`PokemonPage component debe hacer match cuando cargan los pokemons 1`] = `
+<div>
+  <h1>¿Quien es este pokemon?</h1>
+  <div class="pokemon-container"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/5.svg" class="hidden-pokemon" alt="pokemon"></div>
+  <div class="options-container">
+    <ul>
+      <li>Pikachu</li>
+      <li>charmander</li>
+      <li>venusaur</li>
+      <li>mew</li>
+    </ul>
+  </div>
+  <!--v-if-->
+</div>
+`;

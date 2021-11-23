@@ -45,7 +45,7 @@ export default {
       if (selectedId === this.pokemon.id) {
         this.message = `Correcto , ${this.pokemon.name}`;
       } else {
-        this.message = `Nooop.. el pokemon era ${this.pokemon.name} `;
+        this.message = `Nooop.. el pokemon era ${this.pokemon.name}`;
       }
       //console.log(pokemonId);
     },
