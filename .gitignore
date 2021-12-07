@@ -1,7 +1,7 @@
 
 # Created by https://www.toptal.com/developers/gitignore/api/windows,linux,macos,visualstudiocode,git,vue,vuejs,node,angular,react,webstorm,dotenv
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,macos,visualstudiocode,git,vue,vuejs,node,angular,react,webstorm,dotenv
-
+./12-Journal-App-Rest-Api/journalapp/src/api/journalApi.js
 ### Angular ###
 ## Angular ##
 # compiled output
