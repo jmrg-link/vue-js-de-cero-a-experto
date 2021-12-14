@@ -1,8 +1,9 @@
 import { shallowMount } from "@vue/test-utils";
-improt about from "@/tests/unit/views/about.spec.j"
+import About from "@/views/About.vue"
 
 describe("Pruebas en el About.vue", () => {
-
-
-    test('Debe de renderizar el componente correctamente')
+    test('Debe de renderizar el componente correctamente', () => {
+        const wrapper = shallowMount(About)
+        expect(wrapper.html()).toMatchSnapshot()
+    })
 })
