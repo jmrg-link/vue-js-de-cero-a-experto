@@ -3,6 +3,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,macos,visualstudiocode,git,vue,vuejs,node,angular,react,webstorm,dotenv
 12-Journal-App-Rest-Api/journalapp/src/api/
 13-JournalApp-Testing/src/api/
+13-JournalApp-Testing/tests/unit/modules/daybook/helpers/uploadImage.spec.js
 ### Angular ###
 ## Angular ##
 # compiled output

@@ -21,6 +21,9 @@ describe('Pruebas en fab component',()=>{
     })
     test('debe de emitir el evento on:click cuando se hace click', () => {
         // wrapper.emitted('on:click')
-
+        const wrapper = shallowMount( Fab )
+        wrapper.find('button').trigger('click') // wrapper.find busca un 'boton' y el disparo .trigger('evento - click')
+        //console.log(wrapper.emitted()) // { 'on:click': [ [] ], click: [ [ [MouseEvent] ] ] }
+        expect(wrapper.emitted('on:click')).toHaveLength(1) // espera que el evento sea enviado 1 vez
     })
 })
