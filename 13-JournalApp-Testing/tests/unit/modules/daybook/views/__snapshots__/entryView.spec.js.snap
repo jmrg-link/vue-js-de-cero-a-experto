@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el EntryView debe de mostrar la entrada correctamente 1`] = `
+<div class="entry-title d-flex justify-content-between p-2">
+  <div><span class="text-success fs-1 fw-bold">9</span><span class="mx-1 ds-3">Diciembre</span><span class="mx-1 fs-4 fw-light">2021, Jueves</span></div>
+  <div><input type="file" accept="image/png, image/jpeg, image/jpg" style="display: none;"><button class="btn btn-danger mx-2"> Borrar <i class="fa fa-trash-alt"></i></button><button class="btn btn-warning mx-2"> Subir foto <i class="fa fa-upload"></i></button></div>
+</div>
+<hr>
+<div class="d-flex flex-column px-3 h-75"><textarea placeholder=" ¿Que ha sucedido hoy? "></textarea></div>
+<img src="https://res.cloudinary.com/dqhfairbx/image/upload/v1639063054/iou33dhvmulfbegxl1g7.jpg" alt="entry-picture" class="img-thumbnail">
+<!--v-if-->
+<fab-stub icon="fa-save"></fab-stub>
+`;
