@@ -1,3 +1,4 @@
+<!--suppress ALL -->
 <template>
     <div class="home">
         <h1>Reactive vs Refs</h1>
