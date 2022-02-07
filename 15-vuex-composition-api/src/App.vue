@@ -9,6 +9,8 @@
     <router-link :to="{name: 'users'}">Users</router-link>
     |
     <router-link :to="{name: 'pokemon-search'}">Buscar Pokemon :ID</router-link>
+    |
+    <router-link :to="{name: 'todo'}">TodoList</router-link>
   </div>
 
   <router-view v-slot="{ Component , route}">
