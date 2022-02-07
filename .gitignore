@@ -1,6 +1,3 @@
-
-# Created by https://www.toptal.com/developers/gitignore/api/windows,linux,macos,visualstudiocode,git,vue,vuejs,node,angular,react,webstorm,dotenv
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,macos,visualstudiocode,git,vue,vuejs,node,angular,react,webstorm,dotenv
 12-Journal-App-Rest-Api/journalapp/src/api/
 13-JournalApp-Testing/src/api/
 13-JournalApp-Testing/tests/unit/modules/daybook/helpers/uploadImage.spec.js
@@ -395,5 +392,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,visualstudiocode,git,vue,vuejs,node,angular,react,webstorm,dotenv!/14-composition-api-bases/src/views/Pokemon.vue
