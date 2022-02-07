@@ -396,4 +396,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,visualstudiocode,git,vue,vuejs,node,angular,react,webstorm,dotenv
+# End of https://www.toptal.com/developers/gitignore/api/windows,linux,macos,visualstudiocode,git,vue,vuejs,node,angular,react,webstorm,dotenv!/14-composition-api-bases/src/views/Pokemon.vue

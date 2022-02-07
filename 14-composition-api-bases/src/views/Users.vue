@@ -23,21 +23,21 @@ import useUsers from '../composables/useUsers'
 export default {
   setup() {
     const {
-            isLoading,
-            errorMessage,
-            prevPage,
-            nextPage,
-            currentPage,
+            isLoading ,
+            errorMessage ,
+            prevPage ,
+            nextPage ,
+            currentPage ,
             users
           } = useUsers()
 
     return {
       //...useUsers() //destruct useUsers
-      isLoading,
-      errorMessage,
-      prevPage,
-      nextPage,
-      currentPage,
+      isLoading ,
+      errorMessage ,
+      prevPage ,
+      nextPage ,
+      currentPage ,
       users
     }
   }
