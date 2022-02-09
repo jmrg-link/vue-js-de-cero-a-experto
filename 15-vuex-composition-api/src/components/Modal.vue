@@ -5,7 +5,7 @@
     <div class="modal-container">
       <!--{{ newTitle }}-->
       <slot name="header"/>
-      <hr>
+      
       <slot name="body"/>
 
       <slot name="footer"/>
