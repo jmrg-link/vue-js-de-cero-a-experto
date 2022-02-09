@@ -32,6 +32,14 @@
     </ul>
   </div>
 
+  <button>Crear Todo</button>
+  <!--crear modal-->
+  <!--form
+      submit.prevent
+      createTodo
+      -->
+
+
 </template>
 <script>
 import useTodos from '../composables/useTodos'

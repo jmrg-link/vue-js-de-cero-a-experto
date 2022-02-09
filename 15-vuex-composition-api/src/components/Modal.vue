@@ -3,11 +3,14 @@
        @click.self="$emit('on:close')">
 
     <div class="modal-container">
+      <!--{{ newTitle }}-->
       <slot name="header"/>
       <hr>
       <slot name="body"/>
 
       <slot name="footer"/>
+
+      <slot name="exposed" :newTitle="newTitle"/>
 
       <!--<slot>-->
       <!--<div class="center">
@@ -21,15 +24,13 @@
 
 
 export default {
-  props: {
-    title: {
-      type: String ,
-      required: true ,
-    }
-  } ,
+  props: [ 'title' ] ,
   emits: [ 'on:close' ] ,
   setup( props , context ) {
     console.log( { props , context } )
+    return {
+      newTitle: props.title?.toUpperCase()
+    }
   }
 }
 </script>
