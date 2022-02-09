@@ -1,6 +1,7 @@
 12-Journal-App-Rest-Api/journalapp/src/api/
 13-JournalApp-Testing/src/api/
 13-JournalApp-Testing/tests/unit/modules/daybook/helpers/uploadImage.spec.js
+16-auth-vuex-compositionapi/src/api/
 ### Angular ###
 ## Angular ##
 # compiled output
