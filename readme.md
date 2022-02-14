@@ -116,9 +116,9 @@
     * Mutations
     * State
 * **Slots**
-    * <slot></slot>
-    * <my-component></my-component>
-    * <slot name="footer"></slot>
+    * < slot ></ slot >
+    * < my-component >< /my-component >
+    * < slot name="footer" >< /slot >
 
 * **Librerias**
     * Vue Cli
