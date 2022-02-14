@@ -10,17 +10,121 @@
 * Conocimiento básico de JavaScript es necesario
 * Conocimiento básico de programación es necesario
 * Poder realizar instalaciones en el equipo como administrador
-* Se puede lanzar el contenido del curso en OSX (Mac), Windows o Linux
+* Se puede lanzar el contenido del curso en OSX (Mac), Windows o Linux.
+* Conocimiento de ECMA6 mínimo requerido.
+* Conocimiento de Git necesario.
+* **Nota :** prework usado **WebStorm**
 
 ## Comenzando 🚀
 
-<p>En este curso se adjuntara cada Seccion para no mezclar todo el contenido dentro de la misma rama y se adjuntara la documentacion necesaria para poder recuperar los ejemplos independientes.</p>
-<p>Todos los proyectos seras realizados con variables de entorno y bases de datos locales.</p>
-
-## Descripcion :notebook:
+<p>En este curso se desplegara en github los ejemplos sin llaves privadas que puedan ser usadas para desplegar otros servicios anexos a el.</p>
+<p>Todos los proyectos seras usados por objetos exportables y ignorados a la hora de subirse en el .gitignore </p>
+<p>Las api utilizas de GCP seran modificadas al finalizar las secciones. 👌</p>
+## Descripción :notebook:
 
 **Aprender Vue + Vuex 2021**
-<p>Este curso tiene por objetivo llevarte de cero conocimiento de Vue hasta un nivel competitivo en el ambiente laboral de hoy en día. Este curso está construido 100% en js funcional y  componentes.</p>
+<p>Este curso tiene por objetivo llevarte de cero conocimiento de Vue hasta un nivel competitivo en el ambiente laboral de hoy en día. Este curso está construido 100% en js funcional y componentes.</p>
+
+## Slug - Content of Vue2 & Vue3 🆕
+
+* **Directivas**
+    * V-model
+    * V-if - V-else
+    * V-show
+    * V-for
+* **Binding**
+    * V-Bind
+    * : < shorthand >
+        * : disabled
+        * : class
+        * : style
+* **Actions & Events**
+    * V-on
+        * : < shorthand >
+            * @click
+            * @submit or @submit.prevent
+            * @mouseover.once
+    * . stop
+    * . self
+* **List Render**
+    * V-for="item in items" :key="item.id"
+    * V-for="(item,index) in items"
+    * V-for="(value,key) in object"
+* **Modif. Table**
+    * .tab
+    * .delete
+    * .esc
+    * .space
+    * .up
+    * .down
+    * .left
+    * .right
+    * .alt
+    * .shift
+    * .meta
+    * etc...
+
+
+* Component Options
+    * **Data**
+        * data:
+        * props:
+        * methods:
+        * computed:
+    * **DOM**
+        * el:
+        * template:
+        * replace:
+    * **Lifecicle**
+        * created:
+        * mounted:
+        * updated:
+        * unmounted:
+    * **Assets**
+        * directives:
+        * elementDirectives:
+        * filters:
+        * components:
+        * transitions:
+        * partials:
+    * **Others**
+        * inherit:
+        * events:
+        * watch:
+        * mixins:
+        * name:
+
+* **Lifecicle**
+    * beforeCreate:
+    * created:
+    * beforeMount:
+    * mounted:
+    * beforeUpdate:
+    * updated:
+    * activated:
+    * deactivated:
+    * beforeUnmount:
+    * unmounted:
+    * errorCaptured:
+    * renderTracked:
+    * renderTriggered:
+
+* **VueRouter**
+* **Store**
+    * Actions
+    * Getters
+    * Mutations
+    * State
+* **Slots**
+    * <slot></slot>
+    * <my-component></my-component>
+    * <slot name="footer"></slot>
+
+* **Librerias**
+    * Vue Cli
+    * Vue Router
+    * Vue DevTools
+    * Nuxt.js
 
 ## Listado de Temas del Curso: 💯
 
